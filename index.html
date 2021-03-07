@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+    <title>Emeliyanov Capolavoro finale</title>
+  </head>
+  <body bgcolor="faf8ef">
+    <font face="Noto Sans" color="white">
+      <main class="main__section">
+        <div class="title__container">
+          <h1 class="main__title">
+            Hey 👋🏻 welcome to <span style="color: #766e65">2048</span>
+          </h1>
+          <button class="main__button" onclick="start();">New Game</button>
+        </div>
+        <a href="#learn-how-to-play">Learn how to play</a>
+        <br />
+        <br />
+        <table
+          class="table"
+          bgcolor="bbac9f"
+          width="800px"
+          height="800px"
+          cellspacing="10"
+          cellpadding="0"
+        >
+          <tbody class="game-table"></tbody>
+        </table>
+      </main>
+      <aside class="info__section">
+        <div class="info__container" id="learn-how-to-play">
+          <h3 class="info__title">Learn how to play</h3>
+          <p>
+            Use <span style="color: #8f7a65; font-weight: 700;">W A S D</span> keys to move the tiles <span style="color: #8f7a65; font-weight: 700;">up left down right</span>. <br> The goal is to reach the
+            number <span style="color: #8f7a65; font-weight: 700;">2048</span>.
+          </p>
+          <img class="info__icon" src="./icons/info.svg" alt="info icon" />
+        </div>
+        <div class="score__container">
+          <h2 class="score__label">Score:</h2>
+          <h2 class="score__title" class="score">0</h2>
+        </div>
+      </aside>
+    </font>
+  </body>
+
+  <script src="js/logic.js"></script>
+  <script src="js/render.js"></script>
+</html>
