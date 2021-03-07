@@ -73,6 +73,10 @@ function renderTable(cellsNumbers) {
   for (let i = 0; i < size; i++) {
     formattedRow = `<tr height="200px">`;
     for (let j = 0; j < size; j++) {
+      if (cells[i][j] === 2048) {
+        win();
+        return;
+      }
       formattedRow += `
             <th width="200px" bgcolor=${getBackgroundColor(cellsNumbers[i][j])} class="table__cell" style="transition: 0.3 ease-in-out;">
                 <h2 class="cell__title" style="font-size: 4.5rem;">
